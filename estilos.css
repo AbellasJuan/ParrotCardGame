@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EEF9BF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+/*TITULO PARROT CARD GAME*/
+h1{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 56px;
+
+    margin-top: 40px;
+    text-align: center;
+
+    width:auto;
+
+    color: #75B79E;
+}
+
+/*CONTEM AS CARTAS*/
+.container{
+    height: 326px;
+    width: 872px;
+
+    margin-top: 47px;
+    /*margin-left: calc((100% - 872px)/2);*/
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*CARTAS*/
+.carta{
+    width: 117px;
+    height: 146px;
+
+    margin-right: 34px;
+    margin-top: 34px;
+
+    position: relative;
+
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+
+    background-color: #A7E9AF;
+}
+
+.carta-sem-margem-top{
+    margin-top: 0px;
+}
+.carta-sem-margem-right{
+    margin-right: 0px;
+}
+
+.carta img{
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    left: calc((100% - 100px)/2);
+    top: calc((100% - 100px)/2);
+}
+
+
+/*TORNAR CONTEUDO RESPONSISO ATE 872px*/
+@media (max-width: 872px){
+
+.h1{
+    width: auto;
+    text-align: center;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+
+    margin-top: 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.carta{
+   margin: 34px;
+}
+
+.carta-sem-margem-right{
+    display: none;
+}
+
+.carta-sem-margem-right{
+    display: none;
+}
+}
+
+/*TORNAR CONTEUDO RESPONSIVO ATE 335px*/
+@media (max-width: 335px){
+
+h1{
+    font-size: 36px;
+}
+
+.container{
+    margin: 0;
+}
+
+.carta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta img{
+    position: static;
+
+    max-width: 100px;
+    max-height: 100px;
+}
+}
