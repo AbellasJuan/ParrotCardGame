@@ -29,15 +29,21 @@ h1{
 
 /*CONTEM AS CARTAS*/
 .container{
-    height: 326px;
-    width: 872px;
-
+    max-height: auto;
+    max-width: auto;
+    
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
     margin-top: 47px;
     /*margin-left: calc((100% - 872px)/2);*/
 
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
+
+    background-color: blueviolet;
 }
 
 /*CARTAS*/
@@ -45,8 +51,7 @@ h1{
     width: 117px;
     height: 146px;
 
-    margin-right: 34px;
-    margin-top: 34px;
+    margin: 1.5%;
 
     position: relative;
 
@@ -56,21 +61,23 @@ h1{
     background-color: #A7E9AF;
 }
 
-.carta-sem-margem-top{
-    margin-top: 0px;
-}
-.carta-sem-margem-right{
-    margin-right: 0px;
+.cartaCostas{   
+    background-image: url("imagens/front.png");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+ 
 }
 
-.carta img{
-    width: 100px;
-    height: 100px;
-
-    position: absolute;
-    left: calc((100% - 100px)/2);
-    top: calc((100% - 100px)/2);
+.cartaFrente1{
+    background-image: url("imagens/bobrossparrot.gif");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
 }
+
+
+
 
 
 /*TORNAR CONTEUDO RESPONSISO ATE 872px*/
@@ -95,13 +102,7 @@ h1{
    margin: 34px;
 }
 
-.carta-sem-margem-right{
-    margin-right: 34px;
-}
 
-.carta-sem-margem-right{
-    margin-top: 34px;
-}
 }
 
 /*TORNAR CONTEUDO RESPONSIVO ATE 335px*/
