@@ -82,7 +82,7 @@ h1{
 }
 
 .container{
-    width: 100vw;
+    width: auto;
     height: auto;
 
     margin-top: 0;
@@ -96,11 +96,11 @@ h1{
 }
 
 .carta-sem-margem-right{
-    display: none;
+    margin-right: 34px;
 }
 
 .carta-sem-margem-right{
-    display: none;
+    margin-top: 34px;
 }
 }
 
