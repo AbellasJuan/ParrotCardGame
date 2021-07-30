@@ -30,20 +30,16 @@ h1{
 /*CONTEM AS CARTAS*/
 .container{
     max-height: auto;
-    max-width: auto;
-    
+    max-width: 520px;
+/*     
     margin-left: 50%;
-    transform: translateX(-50%);
-    
+    transform: translateX(-50%); */
     margin-top: 47px;
-    /*margin-left: calc((100% - 872px)/2);*/
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-
-    background-color: blueviolet;
 }
 
 /*CARTAS*/
@@ -51,7 +47,7 @@ h1{
     width: 117px;
     height: 146px;
 
-    margin: 1.5%;
+    margin: 0.5vw;
 
     position: relative;
 
@@ -71,6 +67,48 @@ h1{
 
 .cartaFrente1{
     background-image: url("imagens/bobrossparrot.gif");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.cartaFrente2{
+    background-image: url("imagens/explodyparrot.gif");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.cartaFrente3{
+    background-image: url("imagens/fiestaparrot.gif");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.cartaFrente4{
+    background-image: url("imagens/metalparrot.gif");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.cartaFrente5{
+    background-image: url("imagens/revertitparrot.gif");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.cartaFrente6{
+    background-image: url("imagens/tripletsparrot.gif");
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.cartaFrente7{
+    background-image: url("imagens/unicornparrot.gif");
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
