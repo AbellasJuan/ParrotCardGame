@@ -29,9 +29,9 @@ h1{
 
 /*CONTEM AS CARTAS*/
 .container{
-    max-height: auto;
-    max-width: 520px;
-/*     
+    max-height: 200px;
+    max-width: 834px;
+    /*    
     margin-left: 50%;
     transform: translateX(-50%); */
     margin-top: 47px;
@@ -47,7 +47,7 @@ h1{
     width: 117px;
     height: 146px;
 
-    margin: 0.5vw;
+    margin: 17px;
 
     position: relative;
 
