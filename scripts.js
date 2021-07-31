@@ -1,9 +1,12 @@
-
+let ePrimeiraCarta = true;
+let primeiraCarta, segundaCarta;
 let numeroDeCartas; 
+let acabouJogo = 0;
+let contadorDeCliques=0;
 
-let imagens = ["cartaFrente1", "cartaFrente1", "cartaFrente2", "cartaFrente2", "cartaFrente3", "cartaFrente3", "cartaFrente4", "cartaFrente4", "cartaFrente5", "cartaFrente5", "cartaFrente6", "cartaFrente6", "cartaFrente7", "cartaFrente7"];
+const imagens = ["cartaFrente1", "cartaFrente1", "cartaFrente2", "cartaFrente2", "cartaFrente3", "cartaFrente3", "cartaFrente4", "cartaFrente4", "cartaFrente5", "cartaFrente5", "cartaFrente6", "cartaFrente6", "cartaFrente7", "cartaFrente7"];
 
-let imagensSelecionadas = [];
+const imagensSelecionadas = [];
 
 
 function quantasCartasQuerJogar(){ 
@@ -44,8 +47,7 @@ function embaralharArray(){
 
     imagensSelecionadas.sort(comparador);
 //sort é usada para ordenar de acordo com a funçao
-    
-    //sort é usada para ordenar de acordo com a funçao
+//sort é usada para ordenar de acordo com a funçao
 }
 
 function comparador() { 
@@ -59,9 +61,48 @@ function comparador() {
 //     }
 // }
 
-// function selecionarCarta(carta){
-//     let nomeDaId = (carta.id);
-//     nomeDaId = nomeDaId.replace('cartaNumero',' ');
-//     carta.classList.add(imagensSelecionadas[nomeDaId-1]);
-//     // carta.classList.add(imagensSelecionadas);
-// }
+function selecionarCarta(carta){
+    
+    let nomeDaId = (carta.id);
+    nomeDaId = nomeDaId.replace('cartaNumero',' ');
+    carta.classList.add(imagensSelecionadas[nomeDaId-1]);
+    // carta.classList.add(imagensSelecionadas[nomeDaId-1]);
+        
+    manterViradaOuDesvirarCarta(carta);
+}
+
+function manterViradaOuDesvirarCarta(carta){
+    
+    if (ePrimeiraCarta){
+        contadorDeCliques++
+        primeiraCarta = carta
+        ePrimeiraCarta = false;
+    } else {
+        
+        segundaCarta = carta
+        if(primeiraCarta.classList[2] !== segundaCarta.classList[2]){
+            //1 ponto
+            
+            segundaCarta.classList = "carta cartaCostas";
+            primeiraCarta.classList = "carta cartaCostas";
+            
+        } else {
+
+            acabouJogo++
+
+            if(numeroDeCartas/2 === acabouJogo){
+                alert("Você ganhou em " + contadorDeCliques + " jogadas!");
+            } 
+            
+
+        //primeiraCarta.remove(imagensSelecionadas[nomeDaId-1]
+        
+        }
+        ePrimeiraCarta = true 
+    }
+}
+
+//FALTA FAZER
+//virar a carta ao selecionar (fazer delay)
+//tentar fazer a transiçao = bonus
+//pra nao fazer o jogo mandar o ALERT quando clicar em cima da mesma carta, fazer uma condiçao que a id da primeiraCarta !== id da segundaCarta (ou a div inteira)
