@@ -48,7 +48,6 @@ h1{
     height: 146px;
 
     margin: 17px;
-
     position: relative;
 
     border: 1px solid #99CEA8;
@@ -63,6 +62,8 @@ h1{
     background-position:center;
     background-repeat: no-repeat;
  
+    transition: all .5s;
+    transform-style:preserve-3d;
 }
 
 .cartaFrente1{
@@ -70,6 +71,8 @@ h1{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
+
+    transform: rotateY(180deg);
 }
 
 .cartaFrente2{
@@ -77,6 +80,8 @@ h1{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
+
+    transform: rotateY(180deg);
 }
 
 .cartaFrente3{
@@ -84,6 +89,8 @@ h1{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
+
+    transform: rotateY(180deg);
 }
 
 .cartaFrente4{
@@ -91,6 +98,8 @@ h1{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
+
+    transform: rotateY(180deg);
 }
 
 .cartaFrente5{
@@ -98,6 +107,8 @@ h1{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
+
+    transform: rotateY(180deg);
 }
 
 .cartaFrente6{
@@ -105,6 +116,8 @@ h1{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
+
+    transform: rotateY(180deg);
 }
 
 .cartaFrente7{
@@ -112,11 +125,30 @@ h1{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
+
+    transform: rotateY(180deg);
 }
 
+button{
+    margin-top: 20px;
+    background-color: #A7E9AF;
+    font-family: Roboto;
+    font-weight: 500;
 
+    border-style: solid;
+    border-color: black;
 
+}
 
+button:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.esconder{
+    display:none;
+    
+}
 
 /*TORNAR CONTEUDO RESPONSISO ATE 872px*/
 @media (max-width: 872px){
@@ -139,7 +171,6 @@ h1{
 .carta{
    margin: 34px;
 }
-
 
 }
 
