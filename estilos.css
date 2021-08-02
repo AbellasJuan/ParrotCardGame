@@ -32,12 +32,14 @@ button{
     height: 40px;
     text-align: center;
     border: 2px solid #65b37a;
+    
+    border-radius: 5px;
 }
 
 button:hover{
-    filter: brightness(1.2);
+    filter: brightness(1.1);
     cursor: pointer;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 /*CONTEM AS CARTAS*/
@@ -47,7 +49,7 @@ button:hover{
     /*    
     margin-left: 50%;
     transform: translateX(-50%); */
-    margin-top: 47px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -70,7 +72,7 @@ button:hover{
     background-size: 100px;
     background-position:center;
     background-repeat: no-repeat;
- 
+    
     transition: all .5s;
     transform-style:preserve-3d;
 }
@@ -81,7 +83,7 @@ button:hover{
     background-position:center;
     background-repeat: no-repeat;
 
-    transform: rotateY(180deg);
+    transform: rotateY(180deg)
 }
 
 .cartaFrente2{
@@ -161,7 +163,6 @@ button:hover{
 .carta{
    margin: 34px;
 }
-
 }
 
 /*TORNAR CONTEUDO RESPONSIVO ATE 335px*/

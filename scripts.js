@@ -7,7 +7,7 @@ const imagens = ["cartaFrente1", "cartaFrente1", "cartaFrente2", "cartaFrente2",
 const imagensSelecionadas = [];
 
 function quantasCartasQuerJogar(){ 
-    numeroDeCartas = Number(prompt("Olá!! Com quantas cartas quer jogar? Max: 14 cartas"));  
+    numeroDeCartas = Number(prompt("Seja bem-vindo ao PARROT CARD GAMES!!\n\nCom quantas cartas deseja jogar?\n\n• O número de cartas deve ser PAR.\n• Escolha de 4 a 14 cartas"));  
     ValidarNumeroDeCartas();
 }
 
@@ -60,18 +60,6 @@ function selecionarCarta(carta){
     //DEVE ESPERAR AQUI
     manterViradaOuDesvirarCarta(carta);
 }
-//-------------------------------------
-
-
-//TIRAR DUVIDA COM NIVEA
-// function desativarOnClick(){
-//     if (ePrimeiraCarta === false){
-//     let desativarBotao = document.querySelector("onclick")
-//     desativarBotao.onclick = null;
-//     }else(ePrimeiraCarta === true){
-//     desativarBotao.onclick = selecionarCarta(this);
-//     }
-// }
 
 //funçao pra ser dividida em varias menores
 function manterViradaOuDesvirarCarta(carta){
@@ -88,6 +76,7 @@ function manterViradaOuDesvirarCarta(carta){
             segundaCarta.classList = "carta cartaCostas";
             primeiraCarta.classList = "carta cartaCostas";
         
+            //acabar o jogo e aparecer botao de reiniciar partida
         } else {
             acabouJogo++
             if(numeroDeCartas/2 === acabouJogo){
@@ -105,4 +94,3 @@ function manterViradaOuDesvirarCarta(carta){
     }
 }, 1000);
 }
-
