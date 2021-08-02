@@ -6,7 +6,6 @@
 
 body{
     background-color: #EEF9BF;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,24 +17,37 @@ h1{
     font-family: Roboto;
     font-weight: bold;
     font-size: 56px;
-
     margin-top: 40px;
     text-align: center;
-
     width:auto;
-
     color: #75B79E;
+}
+
+button{
+    margin-top: 32px;
+    background-color: #A7E9AF;
+    font-family: Roboto;
+    font-weight: 500;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #65b37a;
+}
+
+button:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+    font-weight: 900;
 }
 
 /*CONTEM AS CARTAS*/
 .container{
     max-height: 200px;
-    max-width: 834px;
+    max-width: 950px;
     /*    
     margin-left: 50%;
     transform: translateX(-50%); */
     margin-top: 47px;
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -46,13 +58,10 @@ h1{
 .carta{
     width: 117px;
     height: 146px;
-
     margin: 17px;
     position: relative;
-
     border: 1px solid #99CEA8;
     border-radius: 5px;
-
     background-color: #A7E9AF;
 }
 
@@ -129,25 +138,8 @@ h1{
     transform: rotateY(180deg);
 }
 
-button{
-    margin-top: 20px;
-    background-color: #A7E9AF;
-    font-family: Roboto;
-    font-weight: 500;
-
-    border-style: solid;
-    border-color: black;
-
-}
-
-button:hover{
-    filter: brightness(1.2);
-    cursor: pointer;
-}
-
 .esconder{
     display:none;
-    
 }
 
 /*TORNAR CONTEUDO RESPONSISO ATE 872px*/
@@ -161,9 +153,7 @@ button:hover{
 .container{
     width: auto;
     height: auto;
-
     margin-top: 0;
-
     align-items: center;
     justify-content: center;
 }
@@ -193,7 +183,6 @@ h1{
 
 .carta img{
     position: static;
-
     max-width: 100px;
     max-height: 100px;
 }
