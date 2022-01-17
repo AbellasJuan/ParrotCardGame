@@ -20,7 +20,7 @@ um gif da aplicação bem maneiro -->
 
 ## Deployment 🚀
 
-<p align="center"><a  href="http://abellasjuan.github.io/parrotcardgame/">Check it here!</a></p>
+<p align="center"><a  href="https://abellasjuan.github.io/ParrotCardGame/">Check it here!</a></p>
 
 </br>
 
