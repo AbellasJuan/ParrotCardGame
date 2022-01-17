@@ -10,7 +10,7 @@
 
 ## About ❔
 
-<p align="center">Parrot Card Game is a fun memory game to pass the time!</p>
+<p align="center">Parrot Card Game is a fun memory card game to pass the time!</p>
 
 <!-- ## Preview
 
